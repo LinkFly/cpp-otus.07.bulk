@@ -12,6 +12,7 @@ using std::endl;
 using std::string;
 namespace fs = std::filesystem;
 
+// TODO using std
 template<class InStream>
 bool readline(InStream& in, string& line) {
 	line = "";
@@ -41,33 +42,23 @@ class Processing {
 public:
 	Processing(int limit) : bulk{ limit } {}
 
-	void process(string& line) {
-		bulk(line);
-	}
+	//void process(string& line) {
+	//	bulk(line);
+	//}
 
 	template<typename InStream>
 	void processInput(InStream& in) {
 		string line;
 		while (readline(in, line)) {
-			process(line);
+			bulk(line);
 		}
 		bulk.eof();
 	}
 };
 
-//void processInput(std::ifstream& in) {
-//	cout << "----- OK" << endl;
-//}
-
 int main(int argc, char** argv) {
-	/*const int bufsize = 1024;
-	char buf[bufsize];*/
-	
 	Processing proc{ std::atoi(argv[1]) };
 	if (argc == 3) {
-		/*auto fin = fopen(argv[2], "r");*/
-		/*fread(buf, 1, bufsize, fin);
-		fclose(fin);*/
 		string line;
 		std::ifstream fin(argv[2], std::ios::in);
 		if (fs::exists(argv[2])) {
@@ -83,6 +74,6 @@ int main(int argc, char** argv) {
 	else {
 		proc.processInput(std::cin);
 	}
-	
+
 	return 0;
 }

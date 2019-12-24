@@ -25,9 +25,13 @@ class BulkBase {
 	CommandsHandler handler{ cmdObservable, state };
 public:
 	BulkBase() = default;
-	BulkBase(int limit) : BulkBase{}  {
+	using fnInit = std::function<void(OutputObserver*)>;
+	BulkBase(int limit, vector<fnInit> fnsInit = vector<fnInit>{}) : BulkBase{} {
 		state.init(limit);
 		obsFactory();
+		for (int i = 0; i < fnsInit.size(); ++i) {
+			fnsInit[i](observers[i].get());
+		}
 	}
 
 private:
@@ -48,4 +52,4 @@ public:
 	void eof() { cmdObservable.notify(ECommand::END); }
 };
 
-using Bulk = BulkBase< ConsoleOutputObserver, FileOutputObserver>;
+using Bulk = BulkBase< ConsoleOutputObserver, FileOutputObserver<>>;
