@@ -52,4 +52,4 @@ public:
 	void eof() { cmdObservable.notify(ECommand::END); }
 };
 
-using Bulk = BulkBase< ConsoleOutputObserver, FileOutputObserver<>>;
+using Bulk = BulkBase< ConsoleOutputObserver, FileOutputObserver<true>>;
