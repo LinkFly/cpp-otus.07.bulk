@@ -7,6 +7,10 @@ set(SOURCES
 set(HEADERS
 	share.h
 	#logger.h
+	state.h
+	commands.h
+	interface.h
+	observers.h
 	bulk.h
 	)
 set(DATA_FILES
