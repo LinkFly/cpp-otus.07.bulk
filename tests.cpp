@@ -166,7 +166,6 @@ bool create_files_test() {
 		exitBlock:
 			;
 		}
-		cout << "--- after block ---\n";
 		// TODO Uncommented
 		fs::remove_all(dir);
 		return isResult;
