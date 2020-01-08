@@ -22,13 +22,13 @@ script:
 - cmake --build . --target tests
 - cmake --build . --target package
 deploy:
-  - provider: script
-    skip_cleanup: true
-    script:
-      - curl -f -T bulk-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -ulinkfly:$BINTRAY_API_KEY "https://api.bintray.com/content/linkfly/otus-cpp/homework/$TRAVIS_BUILD_NUMBER/bulk-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
-  - provider: pages
-    skip_cleanup: true
-    github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
-    keep_history: true
-    on:
-      branch: master
+- provider: script
+  skip_cleanup: true
+  script:
+    - curl -f -T bulk-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb -ulinkfly:$BINTRAY_API_KEY "https://api.bintray.com/content/linkfly/otus-cpp/homework/$TRAVIS_BUILD_NUMBER/bulk-0.0.$TRAVIS_BUILD_NUMBER-Linux.deb;deb_distribution=xenial;deb_component=main;deb_architecture=amd64;publish=1"
+- provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
+  keep_history: true
+  on:
+    branch: master
