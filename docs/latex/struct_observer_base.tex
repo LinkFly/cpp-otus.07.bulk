@@ -1,0 +1,155 @@
+\hypertarget{struct_observer_base}{}\section{Observer\+Base Struct Reference}
+\label{struct_observer_base}\index{Observer\+Base@{Observer\+Base}}
+
+
+{\ttfamily \#include $<$observers.\+h$>$}
+
+
+
+Inheritance diagram for Observer\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_observer_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Observer\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=258pt]{struct_observer_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_observer_base_ade5a5f743b630b7a3a06c097e7f48aa8}{Observer\+Base} (\hyperlink{struct_i_observable}{I\+Observable} \&observable, \hyperlink{class_commands_state}{Commands\+State} \&\hyperlink{struct_observer_base_a107ad54040309605fa5fafd481b97f2f}{state})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \hyperlink{struct_observer_base_acf405ad8b991810572d0c2425f782b36}{out\+Bulk} ()=0
+\item 
+void \hyperlink{struct_observer_base_ae178c765ecda0166fd784dcb4ebe0a40}{update} (\hyperlink{interface_8h_aa299181f275f76f11365a410f7429098}{E\+Command} cmd) override
+\item 
+void \hyperlink{struct_observer_base_adeede05d3ddea8da1148cdce92f07787}{update} (\hyperlink{interface_8h_aa299181f275f76f11365a410f7429098}{E\+Command} cmd, string data) override
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_commands_state}{Commands\+State} \& \hyperlink{struct_observer_base_a107ad54040309605fa5fafd481b97f2f}{state}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 13 of file observers.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Observer\+Base@{Observer\+Base}!Observer\+Base@{Observer\+Base}}
+\index{Observer\+Base@{Observer\+Base}!Observer\+Base@{Observer\+Base}}
+\subsubsection[{\texorpdfstring{Observer\+Base(\+I\+Observable \&observable, Commands\+State \&state)}{ObserverBase(IObservable &observable, CommandsState &state)}}]{\setlength{\rightskip}{0pt plus 5cm}Observer\+Base\+::\+Observer\+Base (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Observable} \&}]{observable, }
+\item[{{\bf Commands\+State} \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{struct_observer_base_ade5a5f743b630b7a3a06c097e7f48aa8}{}\label{struct_observer_base_ade5a5f743b630b7a3a06c097e7f48aa8}
+
+
+Definition at line 14 of file observers.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Observer\+Base@{Observer\+Base}!out\+Bulk@{out\+Bulk}}
+\index{out\+Bulk@{out\+Bulk}!Observer\+Base@{Observer\+Base}}
+\subsubsection[{\texorpdfstring{out\+Bulk()=0}{outBulk()=0}}]{\setlength{\rightskip}{0pt plus 5cm}virtual void Observer\+Base\+::out\+Bulk (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [pure virtual]}}\hypertarget{struct_observer_base_acf405ad8b991810572d0c2425f782b36}{}\label{struct_observer_base_acf405ad8b991810572d0c2425f782b36}
+
+
+Implemented in \hyperlink{struct_file_output_observer_a818d1d56e2495ecfa79a50297a0639ce}{File\+Output\+Observer$<$ use\+\_\+inc\+\_\+file, F\+Name\+Getter $>$}, and \hyperlink{struct_stream_output_observer_a10b38ed3f4f8ef4ffa710830c4229d35}{Stream\+Output\+Observer}.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_observer_base_acf405ad8b991810572d0c2425f782b36_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Observer\+Base@{Observer\+Base}!update@{update}}
+\index{update@{update}!Observer\+Base@{Observer\+Base}}
+\subsubsection[{\texorpdfstring{update(\+E\+Command cmd) override}{update(ECommand cmd) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Observer\+Base\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+Command}}]{cmd}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{struct_observer_base_ae178c765ecda0166fd784dcb4ebe0a40}{}\label{struct_observer_base_ae178c765ecda0166fd784dcb4ebe0a40}
+
+
+Implements \hyperlink{struct_i_observer_a8e86c5a6f02b990dc8ee5bb8a546a056}{I\+Observer}.
+
+
+
+Definition at line 22 of file observers.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_observer_base_ae178c765ecda0166fd784dcb4ebe0a40_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Observer\+Base@{Observer\+Base}!update@{update}}
+\index{update@{update}!Observer\+Base@{Observer\+Base}}
+\subsubsection[{\texorpdfstring{update(\+E\+Command cmd, string data) override}{update(ECommand cmd, string data) override}}]{\setlength{\rightskip}{0pt plus 5cm}void Observer\+Base\+::update (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+Command}}]{cmd, }
+\item[{string}]{data}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [protected]}, {\ttfamily [virtual]}}\hypertarget{struct_observer_base_adeede05d3ddea8da1148cdce92f07787}{}\label{struct_observer_base_adeede05d3ddea8da1148cdce92f07787}
+
+
+Implements \hyperlink{struct_i_observer_a87304ed05adacf4219c5e4252629ae14}{I\+Observer}.
+
+
+
+Reimplemented in \hyperlink{struct_collector_observer_adebc5768f5778ceb3e981362363db247}{Collector\+Observer}.
+
+
+
+Definition at line 31 of file observers.\+h.
+
+
+
+\subsection{Member Data Documentation}
+\index{Observer\+Base@{Observer\+Base}!state@{state}}
+\index{state@{state}!Observer\+Base@{Observer\+Base}}
+\subsubsection[{\texorpdfstring{state}{state}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Commands\+State}\& Observer\+Base\+::state\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{struct_observer_base_a107ad54040309605fa5fafd481b97f2f}{}\label{struct_observer_base_a107ad54040309605fa5fafd481b97f2f}
+
+
+Definition at line 18 of file observers.\+h.
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{observers_8h}{observers.\+h}\end{DoxyCompactItemize}

@@ -1,0 +1,7 @@
+<map id="OutputObserver" name="OutputObserver">
+<area shape="rect" id="node4" href="$struct_file_output_observer.html" title="FileOutputObserver\l\&lt; use_inc_file, FNameGetter \&gt;" alt="" coords="5,229,225,271"/>
+<area shape="rect" id="node5" href="$struct_stream_output_observer.html" title="StreamOutputObserver" alt="" coords="249,237,421,263"/>
+<area shape="rect" id="node2" href="$struct_observer_base.html" title="ObserverBase" alt="" coords="169,80,281,107"/>
+<area shape="rect" id="node3" href="$struct_i_observer.html" title="IObserver" alt="" coords="183,5,266,32"/>
+<area shape="rect" id="node6" href="$struct_console_output_observer.html" title="ConsoleOutputObserver" alt="" coords="248,319,423,345"/>
+</map>

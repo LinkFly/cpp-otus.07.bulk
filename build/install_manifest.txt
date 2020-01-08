@@ -1,0 +1,2 @@
+/usr/bin/bulk
+/usr/lib/bulk/tests/tests

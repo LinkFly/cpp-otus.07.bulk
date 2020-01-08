@@ -1,0 +1,1 @@
+/usr/local/clang-7.0.0/bin/clang++    -rdynamic CMakeFiles/bulk.dir/main.cpp.o  -o bulk -lboost_unit_test_framework -lboost_filesystem -lboost_system 

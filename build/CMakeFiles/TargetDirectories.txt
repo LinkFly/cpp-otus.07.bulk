@@ -1,0 +1,11 @@
+/home/travis/build/LinkFly/cpp-otus.07.bulk/build/CMakeFiles/package_source.dir
+/home/travis/build/LinkFly/cpp-otus.07.bulk/build/CMakeFiles/package.dir
+/home/travis/build/LinkFly/cpp-otus.07.bulk/build/CMakeFiles/test.dir
+/home/travis/build/LinkFly/cpp-otus.07.bulk/build/CMakeFiles/tests.dir
+/home/travis/build/LinkFly/cpp-otus.07.bulk/build/CMakeFiles/edit_cache.dir
+/home/travis/build/LinkFly/cpp-otus.07.bulk/build/CMakeFiles/rebuild_cache.dir
+/home/travis/build/LinkFly/cpp-otus.07.bulk/build/CMakeFiles/install/strip.dir
+/home/travis/build/LinkFly/cpp-otus.07.bulk/build/CMakeFiles/list_install_components.dir
+/home/travis/build/LinkFly/cpp-otus.07.bulk/build/CMakeFiles/bulk.dir
+/home/travis/build/LinkFly/cpp-otus.07.bulk/build/CMakeFiles/install.dir
+/home/travis/build/LinkFly/cpp-otus.07.bulk/build/CMakeFiles/install/local.dir

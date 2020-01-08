@@ -1,0 +1,175 @@
+\hypertarget{class_cmd_base}{}\section{Cmd\+Base Class Reference}
+\label{class_cmd_base}\index{Cmd\+Base@{Cmd\+Base}}
+
+
+{\ttfamily \#include $<$commands.\+h$>$}
+
+
+
+Inheritance diagram for Cmd\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{class_cmd_base__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Cmd\+Base\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=316pt]{class_cmd_base__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_cmd_base_add2802c0ebd8fb70633b83432db0dec2}{init} (\hyperlink{struct_i_observable}{I\+Observable} $\ast$cmd\+Observable, \hyperlink{class_commands_state}{Commands\+State} $\ast$\hyperlink{class_cmd_base_a8960a4214ffcf20763e55b2eb3520a99}{state})
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_cmd_base_a090ff153849f8c18e2d0f1182ffa5acd}{notify\+Start} ()
+\item 
+void \hyperlink{class_cmd_base_a501632bad6f91e45bf8c22073ff432c6}{notify\+End} ()
+\item 
+void \hyperlink{class_cmd_base_a26df8a46be6e4bb0e9d890a625cdac9d}{notify\+Add} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_commands_state}{Commands\+State} $\ast$ \hyperlink{class_cmd_base_a8960a4214ffcf20763e55b2eb3520a99}{state}
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+
+
+Definition at line 8 of file commands.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Cmd\+Base@{Cmd\+Base}!init@{init}}
+\index{init@{init}!Cmd\+Base@{Cmd\+Base}}
+\subsubsection[{\texorpdfstring{init(\+I\+Observable $\ast$cmd\+Observable, Commands\+State $\ast$state)}{init(IObservable *cmdObservable, CommandsState *state)}}]{\setlength{\rightskip}{0pt plus 5cm}void Cmd\+Base\+::init (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Observable} $\ast$}]{cmd\+Observable, }
+\item[{{\bf Commands\+State} $\ast$}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_cmd_base_add2802c0ebd8fb70633b83432db0dec2}{}\label{class_cmd_base_add2802c0ebd8fb70633b83432db0dec2}
+
+
+Definition at line 11 of file commands.\+h.
+
+\index{Cmd\+Base@{Cmd\+Base}!notify\+Add@{notify\+Add}}
+\index{notify\+Add@{notify\+Add}!Cmd\+Base@{Cmd\+Base}}
+\subsubsection[{\texorpdfstring{notify\+Add()}{notifyAdd()}}]{\setlength{\rightskip}{0pt plus 5cm}void Cmd\+Base\+::notify\+Add (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_cmd_base_a26df8a46be6e4bb0e9d890a625cdac9d}{}\label{class_cmd_base_a26df8a46be6e4bb0e9d890a625cdac9d}
+
+
+Definition at line 23 of file commands.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=335pt]{class_cmd_base_a26df8a46be6e4bb0e9d890a625cdac9d_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{Cmd\+Base@{Cmd\+Base}!notify\+End@{notify\+End}}
+\index{notify\+End@{notify\+End}!Cmd\+Base@{Cmd\+Base}}
+\subsubsection[{\texorpdfstring{notify\+End()}{notifyEnd()}}]{\setlength{\rightskip}{0pt plus 5cm}void Cmd\+Base\+::notify\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_cmd_base_a501632bad6f91e45bf8c22073ff432c6}{}\label{class_cmd_base_a501632bad6f91e45bf8c22073ff432c6}
+
+
+Definition at line 20 of file commands.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_cmd_base_a501632bad6f91e45bf8c22073ff432c6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=321pt]{class_cmd_base_a501632bad6f91e45bf8c22073ff432c6_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Cmd\+Base@{Cmd\+Base}!notify\+Start@{notify\+Start}}
+\index{notify\+Start@{notify\+Start}!Cmd\+Base@{Cmd\+Base}}
+\subsubsection[{\texorpdfstring{notify\+Start()}{notifyStart()}}]{\setlength{\rightskip}{0pt plus 5cm}void Cmd\+Base\+::notify\+Start (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [protected]}}\hypertarget{class_cmd_base_a090ff153849f8c18e2d0f1182ffa5acd}{}\label{class_cmd_base_a090ff153849f8c18e2d0f1182ffa5acd}
+
+
+Definition at line 17 of file commands.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{class_cmd_base_a090ff153849f8c18e2d0f1182ffa5acd_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=327pt]{class_cmd_base_a090ff153849f8c18e2d0f1182ffa5acd_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Member Data Documentation}
+\index{Cmd\+Base@{Cmd\+Base}!state@{state}}
+\index{state@{state}!Cmd\+Base@{Cmd\+Base}}
+\subsubsection[{\texorpdfstring{state}{state}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Commands\+State}$\ast$ Cmd\+Base\+::state\hspace{0.3cm}{\ttfamily [protected]}}\hypertarget{class_cmd_base_a8960a4214ffcf20763e55b2eb3520a99}{}\label{class_cmd_base_a8960a4214ffcf20763e55b2eb3520a99}
+
+
+Definition at line 16 of file commands.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{commands_8h}{commands.\+h}\end{DoxyCompactItemize}

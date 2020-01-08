@@ -1,0 +1,411 @@
+\hypertarget{tests_8cpp}{}\section{tests.\+cpp File Reference}
+\label{tests_8cpp}\index{tests.\+cpp@{tests.\+cpp}}
+{\ttfamily \#include \char`\"{}share.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$boost/test/unit\+\_\+test.\+hpp$>$}\\*
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$fstream$>$}\\*
+{\ttfamily \#include $<$functional$>$}\\*
+{\ttfamily \#include $<$ctime$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$sstream$>$}\\*
+{\ttfamily \#include $<$boost/filesystem.\+hpp$>$}\\*
+{\ttfamily \#include \char`\"{}bulk.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}observers.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}interface.\+h\char`\"{}}\\*
+Include dependency graph for tests.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{tests_8cpp_a6b2a3852db8bb19ab6909bac01859985}{B\+O\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+M\+O\+D\+U\+LE}~bulk\+\_\+test\+\_\+module
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{tests_8cpp_aa077d5d13677e8627ef4bb67164ec979}{call\+\_\+test} (string name, std\+::function$<$ bool(void)$>$ fntest)
+\item 
+\hyperlink{class_bulk_base}{Bulk\+Base}$<$ \hyperlink{struct_stream_output_observer}{Stream\+Output\+Observer} $>$ \hyperlink{tests_8cpp_ab4a307d1673af3951f0bde503a10265e}{create\+Bulk} (std\+::unique\+\_\+ptr$<$ std\+::stringstream $>$ \&psout, int size=3)
+\item 
+{\footnotesize template$<$class Bulk\+Type $>$ }\\string \hyperlink{tests_8cpp_a40b8d78d488117600deb8a60915d0a8f}{base\+\_\+send\+\_\+to} (Bulk\+Type \&bulk, std\+::unique\+\_\+ptr$<$ std\+::stringstream $>$ \&psout, vector$<$ string $>$ cmd\+Lines)
+\item 
+{\footnotesize template$<$class Bulk\+Type $>$ }\\string \hyperlink{tests_8cpp_aa6f57c4d5e6addd9d0fad0b2e7f1b805}{send\+\_\+to} (Bulk\+Type \&bulk, vector$<$ string $>$ cmd\+Lines)
+\item 
+string \hyperlink{tests_8cpp_a8f3d8d7d6db8ee35b928ec5466564954}{send} (vector$<$ string $>$ cmd\+Lines)
+\item 
+string \hyperlink{tests_8cpp_a0daf9a77b59886e9bfee43520b60b599}{readfile} (string file)
+\item 
+bool \hyperlink{tests_8cpp_a27f4531407d483867e2f5432ea80d3a6}{trivial\+\_\+test} ()
+\item 
+bool \hyperlink{tests_8cpp_a33fd002975bcbea9a830478df5760cf1}{dynamic\+\_\+size\+\_\+test} ()
+\item 
+bool \hyperlink{tests_8cpp_ac4c7e0c1b9d16bf69a8c43ec4367155c}{nested\+\_\+dynamic\+\_\+size\+\_\+test} ()
+\item 
+bool \hyperlink{tests_8cpp_ab2fea220457efe10181451d9d37538e4}{create\+\_\+files\+\_\+test} ()
+\item 
+\hyperlink{tests_8cpp_a7e8793991b9c70003fdda2e627030fbe}{B\+O\+O\+S\+T\+\_\+\+A\+U\+T\+O\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE} (test\+\_\+of\+\_\+matrix)
+\end{DoxyCompactItemize}
+\subsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const char \hyperlink{tests_8cpp_addd5944926e4757f72bf26672eb262b1}{temp\+\_\+dir} \mbox{[}$\,$\mbox{]} = \char`\"{}\+\_\+tmp\+\_\+bulk\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\subsection{Macro Definition Documentation}
+\index{tests.\+cpp@{tests.\+cpp}!B\+O\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+M\+O\+D\+U\+LE@{B\+O\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+M\+O\+D\+U\+LE}}
+\index{B\+O\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+M\+O\+D\+U\+LE@{B\+O\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+M\+O\+D\+U\+LE}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+M\+O\+D\+U\+LE}{BOOST_TEST_MODULE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define B\+O\+O\+S\+T\+\_\+\+T\+E\+S\+T\+\_\+\+M\+O\+D\+U\+LE~bulk\+\_\+test\+\_\+module}\hypertarget{tests_8cpp_a6b2a3852db8bb19ab6909bac01859985}{}\label{tests_8cpp_a6b2a3852db8bb19ab6909bac01859985}
+
+
+Definition at line 3 of file tests.\+cpp.
+
+
+
+\subsection{Function Documentation}
+\index{tests.\+cpp@{tests.\+cpp}!base\+\_\+send\+\_\+to@{base\+\_\+send\+\_\+to}}
+\index{base\+\_\+send\+\_\+to@{base\+\_\+send\+\_\+to}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{base\+\_\+send\+\_\+to(\+Bulk\+Type \&bulk, std\+::unique\+\_\+ptr$<$ std\+::stringstream $>$ \&psout, vector$<$ string $>$ cmd\+Lines)}{base_send_to(BulkType &bulk, std::unique_ptr< std::stringstream > &psout, vector< string > cmdLines)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Bulk\+Type $>$ string base\+\_\+send\+\_\+to (
+\begin{DoxyParamCaption}
+\item[{Bulk\+Type \&}]{bulk, }
+\item[{std\+::unique\+\_\+ptr$<$ std\+::stringstream $>$ \&}]{psout, }
+\item[{vector$<$ string $>$}]{cmd\+Lines}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_a40b8d78d488117600deb8a60915d0a8f}{}\label{tests_8cpp_a40b8d78d488117600deb8a60915d0a8f}
+
+
+Definition at line 56 of file tests.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a40b8d78d488117600deb8a60915d0a8f_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!B\+O\+O\+S\+T\+\_\+\+A\+U\+T\+O\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE@{B\+O\+O\+S\+T\+\_\+\+A\+U\+T\+O\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE}}
+\index{B\+O\+O\+S\+T\+\_\+\+A\+U\+T\+O\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE@{B\+O\+O\+S\+T\+\_\+\+A\+U\+T\+O\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{B\+O\+O\+S\+T\+\_\+\+A\+U\+T\+O\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+S\+E(test\+\_\+of\+\_\+matrix)}{BOOST_AUTO_TEST_CASE(test_of_matrix)}}]{\setlength{\rightskip}{0pt plus 5cm}B\+O\+O\+S\+T\+\_\+\+A\+U\+T\+O\+\_\+\+T\+E\+S\+T\+\_\+\+C\+A\+SE (
+\begin{DoxyParamCaption}
+\item[{test\+\_\+of\+\_\+matrix}]{}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_a7e8793991b9c70003fdda2e627030fbe}{}\label{tests_8cpp_a7e8793991b9c70003fdda2e627030fbe}
+
+
+Definition at line 182 of file tests.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a7e8793991b9c70003fdda2e627030fbe_cgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!call\+\_\+test@{call\+\_\+test}}
+\index{call\+\_\+test@{call\+\_\+test}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{call\+\_\+test(string name, std\+::function$<$ bool(void)$>$ fntest)}{call_test(string name, std::function< bool(void)> fntest)}}]{\setlength{\rightskip}{0pt plus 5cm}bool call\+\_\+test (
+\begin{DoxyParamCaption}
+\item[{string}]{name, }
+\item[{std\+::function$<$ bool(void)$>$}]{fntest}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_aa077d5d13677e8627ef4bb67164ec979}{}\label{tests_8cpp_aa077d5d13677e8627ef4bb67164ec979}
+
+
+Definition at line 33 of file tests.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_aa077d5d13677e8627ef4bb67164ec979_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!create\+\_\+files\+\_\+test@{create\+\_\+files\+\_\+test}}
+\index{create\+\_\+files\+\_\+test@{create\+\_\+files\+\_\+test}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{create\+\_\+files\+\_\+test()}{create_files_test()}}]{\setlength{\rightskip}{0pt plus 5cm}bool create\+\_\+files\+\_\+test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_ab2fea220457efe10181451d9d37538e4}{}\label{tests_8cpp_ab2fea220457efe10181451d9d37538e4}
+
+
+Definition at line 119 of file tests.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_ab2fea220457efe10181451d9d37538e4_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_ab2fea220457efe10181451d9d37538e4_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!create\+Bulk@{create\+Bulk}}
+\index{create\+Bulk@{create\+Bulk}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{create\+Bulk(std\+::unique\+\_\+ptr$<$ std\+::stringstream $>$ \&psout, int size=3)}{createBulk(std::unique_ptr< std::stringstream > &psout, int size=3)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Bulk\+Base}$<${\bf Stream\+Output\+Observer}$>$ create\+Bulk (
+\begin{DoxyParamCaption}
+\item[{std\+::unique\+\_\+ptr$<$ std\+::stringstream $>$ \&}]{psout, }
+\item[{int}]{size = {\ttfamily 3}}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_ab4a307d1673af3951f0bde503a10265e}{}\label{tests_8cpp_ab4a307d1673af3951f0bde503a10265e}
+
+
+Definition at line 47 of file tests.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_ab4a307d1673af3951f0bde503a10265e_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!dynamic\+\_\+size\+\_\+test@{dynamic\+\_\+size\+\_\+test}}
+\index{dynamic\+\_\+size\+\_\+test@{dynamic\+\_\+size\+\_\+test}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{dynamic\+\_\+size\+\_\+test()}{dynamic_size_test()}}]{\setlength{\rightskip}{0pt plus 5cm}bool dynamic\+\_\+size\+\_\+test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_a33fd002975bcbea9a830478df5760cf1}{}\label{tests_8cpp_a33fd002975bcbea9a830478df5760cf1}
+
+
+Definition at line 102 of file tests.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a33fd002975bcbea9a830478df5760cf1_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a33fd002975bcbea9a830478df5760cf1_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!nested\+\_\+dynamic\+\_\+size\+\_\+test@{nested\+\_\+dynamic\+\_\+size\+\_\+test}}
+\index{nested\+\_\+dynamic\+\_\+size\+\_\+test@{nested\+\_\+dynamic\+\_\+size\+\_\+test}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{nested\+\_\+dynamic\+\_\+size\+\_\+test()}{nested_dynamic_size_test()}}]{\setlength{\rightskip}{0pt plus 5cm}bool nested\+\_\+dynamic\+\_\+size\+\_\+test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_ac4c7e0c1b9d16bf69a8c43ec4367155c}{}\label{tests_8cpp_ac4c7e0c1b9d16bf69a8c43ec4367155c}
+
+
+Definition at line 111 of file tests.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_ac4c7e0c1b9d16bf69a8c43ec4367155c_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_ac4c7e0c1b9d16bf69a8c43ec4367155c_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!readfile@{readfile}}
+\index{readfile@{readfile}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{readfile(string file)}{readfile(string file)}}]{\setlength{\rightskip}{0pt plus 5cm}string readfile (
+\begin{DoxyParamCaption}
+\item[{string}]{file}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_a0daf9a77b59886e9bfee43520b60b599}{}\label{tests_8cpp_a0daf9a77b59886e9bfee43520b60b599}
+
+
+Definition at line 76 of file tests.\+cpp.
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a0daf9a77b59886e9bfee43520b60b599_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!send@{send}}
+\index{send@{send}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{send(vector$<$ string $>$ cmd\+Lines)}{send(vector< string > cmdLines)}}]{\setlength{\rightskip}{0pt plus 5cm}string send (
+\begin{DoxyParamCaption}
+\item[{vector$<$ string $>$}]{cmd\+Lines}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_a8f3d8d7d6db8ee35b928ec5466564954}{}\label{tests_8cpp_a8f3d8d7d6db8ee35b928ec5466564954}
+
+
+Definition at line 70 of file tests.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{tests_8cpp_a8f3d8d7d6db8ee35b928ec5466564954_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a8f3d8d7d6db8ee35b928ec5466564954_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!send\+\_\+to@{send\+\_\+to}}
+\index{send\+\_\+to@{send\+\_\+to}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{send\+\_\+to(\+Bulk\+Type \&bulk, vector$<$ string $>$ cmd\+Lines)}{send_to(BulkType &bulk, vector< string > cmdLines)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class Bulk\+Type $>$ string send\+\_\+to (
+\begin{DoxyParamCaption}
+\item[{Bulk\+Type \&}]{bulk, }
+\item[{vector$<$ string $>$}]{cmd\+Lines}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_aa6f57c4d5e6addd9d0fad0b2e7f1b805}{}\label{tests_8cpp_aa6f57c4d5e6addd9d0fad0b2e7f1b805}
+
+
+Definition at line 65 of file tests.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=254pt]{tests_8cpp_aa6f57c4d5e6addd9d0fad0b2e7f1b805_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_aa6f57c4d5e6addd9d0fad0b2e7f1b805_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{tests.\+cpp@{tests.\+cpp}!trivial\+\_\+test@{trivial\+\_\+test}}
+\index{trivial\+\_\+test@{trivial\+\_\+test}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{trivial\+\_\+test()}{trivial_test()}}]{\setlength{\rightskip}{0pt plus 5cm}bool trivial\+\_\+test (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{tests_8cpp_a27f4531407d483867e2f5432ea80d3a6}{}\label{tests_8cpp_a27f4531407d483867e2f5432ea80d3a6}
+
+
+Definition at line 95 of file tests.\+cpp.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{tests_8cpp_a27f4531407d483867e2f5432ea80d3a6_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{tests_8cpp_a27f4531407d483867e2f5432ea80d3a6_icgraph}
+\end{center}
+\end{figure}
+
+
+
+
+\subsection{Variable Documentation}
+\index{tests.\+cpp@{tests.\+cpp}!temp\+\_\+dir@{temp\+\_\+dir}}
+\index{temp\+\_\+dir@{temp\+\_\+dir}!tests.\+cpp@{tests.\+cpp}}
+\subsubsection[{\texorpdfstring{temp\+\_\+dir}{temp_dir}}]{\setlength{\rightskip}{0pt plus 5cm}const char temp\+\_\+dir\mbox{[}$\,$\mbox{]} = \char`\"{}\+\_\+tmp\+\_\+bulk\char`\"{}}\hypertarget{tests_8cpp_addd5944926e4757f72bf26672eb262b1}{}\label{tests_8cpp_addd5944926e4757f72bf26672eb262b1}
+
+
+Definition at line 31 of file tests.\+cpp.
+

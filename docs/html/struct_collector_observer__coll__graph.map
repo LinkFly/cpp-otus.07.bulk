@@ -1,0 +1,5 @@
+<map id="CollectorObserver" name="CollectorObserver">
+<area shape="rect" id="node2" href="$struct_observer_base.html" title="ObserverBase" alt="" coords="56,95,168,121"/>
+<area shape="rect" id="node3" href="$struct_i_observer.html" title="IObserver" alt="" coords="5,5,88,32"/>
+<area shape="rect" id="node4" href="$class_commands_state.html" title="CommandsState" alt="" coords="112,5,243,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="StreamOutputObserver" name="StreamOutputObserver">
+<area shape="rect" id="node5" href="$struct_console_output_observer.html" title="ConsoleOutputObserver" alt="" coords="5,304,180,331"/>
+<area shape="rect" id="node2" href="$struct_output_observer.html" title="OutputObserver" alt="" coords="31,155,155,181"/>
+<area shape="rect" id="node3" href="$struct_observer_base.html" title="ObserverBase" alt="" coords="37,80,149,107"/>
+<area shape="rect" id="node4" href="$struct_i_observer.html" title="IObserver" alt="" coords="51,5,134,32"/>
+</map>

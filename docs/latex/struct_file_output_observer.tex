@@ -1,0 +1,140 @@
+\hypertarget{struct_file_output_observer}{}\section{File\+Output\+Observer$<$ use\+\_\+inc\+\_\+file, F\+Name\+Getter $>$ Struct Template Reference}
+\label{struct_file_output_observer}\index{File\+Output\+Observer$<$ use\+\_\+inc\+\_\+file, F\+Name\+Getter $>$@{File\+Output\+Observer$<$ use\+\_\+inc\+\_\+file, F\+Name\+Getter $>$}}
+
+
+{\ttfamily \#include $<$observers.\+h$>$}
+
+
+
+Inheritance diagram for File\+Output\+Observer$<$ use\+\_\+inc\+\_\+file, F\+Name\+Getter $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=245pt]{struct_file_output_observer__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for File\+Output\+Observer$<$ use\+\_\+inc\+\_\+file, F\+Name\+Getter $>$\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=261pt]{struct_file_output_observer__coll__graph}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{struct_file_output_observer_aa4fba0db9135440d1839b78cf3f5d6f2}{File\+Output\+Observer} (\hyperlink{struct_i_observable}{I\+Observable} \&observable, \hyperlink{class_commands_state}{Commands\+State} \&\hyperlink{struct_observer_base_a107ad54040309605fa5fafd481b97f2f}{state})
+\item 
+std\+::ostream \& \hyperlink{struct_file_output_observer_a29e2740fee9602d0c6ebcb2fe44d2060}{get\+Out\+Stream} () override
+\item 
+void \hyperlink{struct_file_output_observer_a818d1d56e2495ecfa79a50297a0639ce}{out\+Bulk} () override
+\item 
+\hyperlink{struct_file_output_observer_ab1ce3fa7b827c1cc13aa231be7612e72}{$\sim$\+File\+Output\+Observer} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static string \hyperlink{struct_file_output_observer_a2fa43d18e8535b246ad2167c3dbd7eaa}{gen\+File\+Name} (time\+\_\+t time)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$bool use\+\_\+inc\+\_\+file = false, class F\+Name\+Getter = Filename\+Getter$<$use\+\_\+inc\+\_\+file$>$$>$\\*
+struct File\+Output\+Observer$<$ use\+\_\+inc\+\_\+file, F\+Name\+Getter $>$}
+
+
+
+Definition at line 102 of file observers.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{File\+Output\+Observer@{File\+Output\+Observer}!File\+Output\+Observer@{File\+Output\+Observer}}
+\index{File\+Output\+Observer@{File\+Output\+Observer}!File\+Output\+Observer@{File\+Output\+Observer}}
+\subsubsection[{\texorpdfstring{File\+Output\+Observer(\+I\+Observable \&observable, Commands\+State \&state)}{FileOutputObserver(IObservable &observable, CommandsState &state)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$bool use\+\_\+inc\+\_\+file = false, class F\+Name\+Getter  = Filename\+Getter$<$use\+\_\+inc\+\_\+file$>$$>$ {\bf File\+Output\+Observer}$<$ use\+\_\+inc\+\_\+file, F\+Name\+Getter $>$\+::{\bf File\+Output\+Observer} (
+\begin{DoxyParamCaption}
+\item[{{\bf I\+Observable} \&}]{observable, }
+\item[{{\bf Commands\+State} \&}]{state}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{struct_file_output_observer_aa4fba0db9135440d1839b78cf3f5d6f2}{}\label{struct_file_output_observer_aa4fba0db9135440d1839b78cf3f5d6f2}
+
+
+Definition at line 103 of file observers.\+h.
+
+\index{File\+Output\+Observer@{File\+Output\+Observer}!````~File\+Output\+Observer@{$\sim$\+File\+Output\+Observer}}
+\index{````~File\+Output\+Observer@{$\sim$\+File\+Output\+Observer}!File\+Output\+Observer@{File\+Output\+Observer}}
+\subsubsection[{\texorpdfstring{$\sim$\+File\+Output\+Observer()}{~FileOutputObserver()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$bool use\+\_\+inc\+\_\+file = false, class F\+Name\+Getter  = Filename\+Getter$<$use\+\_\+inc\+\_\+file$>$$>$ {\bf File\+Output\+Observer}$<$ use\+\_\+inc\+\_\+file, F\+Name\+Getter $>$\+::$\sim${\bf File\+Output\+Observer} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{struct_file_output_observer_ab1ce3fa7b827c1cc13aa231be7612e72}{}\label{struct_file_output_observer_ab1ce3fa7b827c1cc13aa231be7612e72}
+
+
+Definition at line 120 of file observers.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{File\+Output\+Observer@{File\+Output\+Observer}!gen\+File\+Name@{gen\+File\+Name}}
+\index{gen\+File\+Name@{gen\+File\+Name}!File\+Output\+Observer@{File\+Output\+Observer}}
+\subsubsection[{\texorpdfstring{gen\+File\+Name(time\+\_\+t time)}{genFileName(time_t time)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$bool use\+\_\+inc\+\_\+file = false, class F\+Name\+Getter  = Filename\+Getter$<$use\+\_\+inc\+\_\+file$>$$>$ static string {\bf File\+Output\+Observer}$<$ use\+\_\+inc\+\_\+file, F\+Name\+Getter $>$\+::gen\+File\+Name (
+\begin{DoxyParamCaption}
+\item[{time\+\_\+t}]{time}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}\hypertarget{struct_file_output_observer_a2fa43d18e8535b246ad2167c3dbd7eaa}{}\label{struct_file_output_observer_a2fa43d18e8535b246ad2167c3dbd7eaa}
+
+
+Definition at line 137 of file observers.\+h.
+
+\index{File\+Output\+Observer@{File\+Output\+Observer}!get\+Out\+Stream@{get\+Out\+Stream}}
+\index{get\+Out\+Stream@{get\+Out\+Stream}!File\+Output\+Observer@{File\+Output\+Observer}}
+\subsubsection[{\texorpdfstring{get\+Out\+Stream() override}{getOutStream() override}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$bool use\+\_\+inc\+\_\+file = false, class F\+Name\+Getter  = Filename\+Getter$<$use\+\_\+inc\+\_\+file$>$$>$ std\+::ostream\& {\bf File\+Output\+Observer}$<$ use\+\_\+inc\+\_\+file, F\+Name\+Getter $>$\+::get\+Out\+Stream (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{struct_file_output_observer_a29e2740fee9602d0c6ebcb2fe44d2060}{}\label{struct_file_output_observer_a29e2740fee9602d0c6ebcb2fe44d2060}
+
+
+Reimplemented from \hyperlink{struct_output_observer_a6a89f9b1dbe4781dd3246f751b73756e}{Output\+Observer}.
+
+
+
+Definition at line 105 of file observers.\+h.
+
+\index{File\+Output\+Observer@{File\+Output\+Observer}!out\+Bulk@{out\+Bulk}}
+\index{out\+Bulk@{out\+Bulk}!File\+Output\+Observer@{File\+Output\+Observer}}
+\subsubsection[{\texorpdfstring{out\+Bulk() override}{outBulk() override}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$bool use\+\_\+inc\+\_\+file = false, class F\+Name\+Getter  = Filename\+Getter$<$use\+\_\+inc\+\_\+file$>$$>$ void {\bf File\+Output\+Observer}$<$ use\+\_\+inc\+\_\+file, F\+Name\+Getter $>$\+::out\+Bulk (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}\hypertarget{struct_file_output_observer_a818d1d56e2495ecfa79a50297a0639ce}{}\label{struct_file_output_observer_a818d1d56e2495ecfa79a50297a0639ce}
+
+
+Implements \hyperlink{struct_observer_base_acf405ad8b991810572d0c2425f782b36}{Observer\+Base}.
+
+
+
+Definition at line 110 of file observers.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{struct_file_output_observer_a818d1d56e2495ecfa79a50297a0639ce_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{observers_8h}{observers.\+h}\end{DoxyCompactItemize}

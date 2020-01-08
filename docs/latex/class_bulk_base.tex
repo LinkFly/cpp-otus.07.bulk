@@ -1,0 +1,118 @@
+\hypertarget{class_bulk_base}{}\section{Bulk\+Base$<$ Out\+Observers $>$ Class Template Reference}
+\label{class_bulk_base}\index{Bulk\+Base$<$ Out\+Observers $>$@{Bulk\+Base$<$ Out\+Observers $>$}}
+
+
+{\ttfamily \#include $<$bulk.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+using \hyperlink{class_bulk_base_ad7331d3366a082a94ca04a3201dfc94c}{fn\+Init} = std\+::function$<$ void(\hyperlink{struct_output_observer}{Output\+Observer} $\ast$)$>$
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_bulk_base_a63b25f6d98030224778baf357157631b}{Bulk\+Base} ()=default
+\item 
+\hyperlink{class_bulk_base_aeb17064f4fedbf1584feb60199bbf649}{Bulk\+Base} (int limit, vector$<$ \hyperlink{class_bulk_base_ad7331d3366a082a94ca04a3201dfc94c}{fn\+Init} $>$ fns\+Init=vector$<$ \hyperlink{class_bulk_base_ad7331d3366a082a94ca04a3201dfc94c}{fn\+Init} $>$\{\})
+\item 
+void \hyperlink{class_bulk_base_a3c920e9c377f87728b9d6aaf5116e824}{operator()} (string \&line)
+\item 
+void \hyperlink{class_bulk_base_aff6263fd52d47be936676a1afa890a4a}{eof} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename... Out\+Observers$>$\\*
+class Bulk\+Base$<$ Out\+Observers $>$}
+
+
+
+Definition at line 16 of file bulk.\+h.
+
+
+
+\subsection{Member Typedef Documentation}
+\index{Bulk\+Base@{Bulk\+Base}!fn\+Init@{fn\+Init}}
+\index{fn\+Init@{fn\+Init}!Bulk\+Base@{Bulk\+Base}}
+\subsubsection[{\texorpdfstring{fn\+Init}{fnInit}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Out\+Observers$>$ using {\bf Bulk\+Base}$<$ Out\+Observers $>$\+::{\bf fn\+Init} =  std\+::function$<$void({\bf Output\+Observer}$\ast$)$>$}\hypertarget{class_bulk_base_ad7331d3366a082a94ca04a3201dfc94c}{}\label{class_bulk_base_ad7331d3366a082a94ca04a3201dfc94c}
+
+
+Definition at line 23 of file bulk.\+h.
+
+
+
+\subsection{Constructor \& Destructor Documentation}
+\index{Bulk\+Base@{Bulk\+Base}!Bulk\+Base@{Bulk\+Base}}
+\index{Bulk\+Base@{Bulk\+Base}!Bulk\+Base@{Bulk\+Base}}
+\subsubsection[{\texorpdfstring{Bulk\+Base()=default}{BulkBase()=default}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Out\+Observers$>$ {\bf Bulk\+Base}$<$ Out\+Observers $>$\+::{\bf Bulk\+Base} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [default]}}\hypertarget{class_bulk_base_a63b25f6d98030224778baf357157631b}{}\label{class_bulk_base_a63b25f6d98030224778baf357157631b}
+\index{Bulk\+Base@{Bulk\+Base}!Bulk\+Base@{Bulk\+Base}}
+\index{Bulk\+Base@{Bulk\+Base}!Bulk\+Base@{Bulk\+Base}}
+\subsubsection[{\texorpdfstring{Bulk\+Base(int limit, vector$<$ fn\+Init $>$ fns\+Init=vector$<$ fn\+Init $>$\lcurly{}\rcurly{})}{BulkBase(int limit, vector< fnInit > fnsInit=vector< fnInit >\{\})}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Out\+Observers$>$ {\bf Bulk\+Base}$<$ Out\+Observers $>$\+::{\bf Bulk\+Base} (
+\begin{DoxyParamCaption}
+\item[{int}]{limit, }
+\item[{vector$<$ {\bf fn\+Init} $>$}]{fns\+Init = {\ttfamily vector$<${\bf fn\+Init}$>$\{\}}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_bulk_base_aeb17064f4fedbf1584feb60199bbf649}{}\label{class_bulk_base_aeb17064f4fedbf1584feb60199bbf649}
+
+
+Definition at line 24 of file bulk.\+h.
+
+
+
+\subsection{Member Function Documentation}
+\index{Bulk\+Base@{Bulk\+Base}!eof@{eof}}
+\index{eof@{eof}!Bulk\+Base@{Bulk\+Base}}
+\subsubsection[{\texorpdfstring{eof()}{eof()}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Out\+Observers$>$ void {\bf Bulk\+Base}$<$ Out\+Observers $>$\+::eof (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_bulk_base_aff6263fd52d47be936676a1afa890a4a}{}\label{class_bulk_base_aff6263fd52d47be936676a1afa890a4a}
+
+
+Definition at line 47 of file bulk.\+h.
+
+
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{class_bulk_base_aff6263fd52d47be936676a1afa890a4a_cgraph}
+\end{center}
+\end{figure}
+
+
+
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{class_bulk_base_aff6263fd52d47be936676a1afa890a4a_icgraph}
+\end{center}
+\end{figure}
+
+
+\index{Bulk\+Base@{Bulk\+Base}!operator()@{operator()}}
+\index{operator()@{operator()}!Bulk\+Base@{Bulk\+Base}}
+\subsubsection[{\texorpdfstring{operator()(string \&line)}{operator()(string &line)}}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename... Out\+Observers$>$ void {\bf Bulk\+Base}$<$ Out\+Observers $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{string \&}]{line}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\hypertarget{class_bulk_base_a3c920e9c377f87728b9d6aaf5116e824}{}\label{class_bulk_base_a3c920e9c377f87728b9d6aaf5116e824}
+
+
+Definition at line 44 of file bulk.\+h.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{bulk_8h}{bulk.\+h}\end{DoxyCompactItemize}

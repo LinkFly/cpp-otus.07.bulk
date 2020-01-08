@@ -1,0 +1,4 @@
+<map id="CmdAdd" name="CmdAdd">
+<area shape="rect" id="node2" href="$class_cmd_base.html" title="CmdBase" alt="" coords="43,80,127,107"/>
+<area shape="rect" id="node3" href="$struct_i_command.html" title="ICommand\&lt; string \&gt;" alt="" coords="5,5,164,32"/>
+</map>
