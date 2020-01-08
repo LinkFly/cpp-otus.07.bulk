@@ -10,7 +10,8 @@
 #include <vector>
 #include <string>
 #include <sstream>
-#include <filesystem>
+/*#include <filesystem>*/
+#include <boost/filesystem.hpp>
 #include <ctime>
 
 #include "bulk.h"
@@ -24,7 +25,8 @@ using std::clock;
 using std::vector;
 using std::function;
 using std::ifstream;
-namespace fs = std::filesystem;
+/*namespace fs = std::filesystem;*/
+namespace fs = boost::filesystem;
 
 const char temp_dir[] = "_tmp_bulk";
 
