@@ -53,7 +53,7 @@ BulkBase<StreamOutputObserver> createBulk(std::unique_ptr<std::stringstream>& ps
 }
 
 template<class BulkType>
-string base_send_to(BulkType& bulk, std::unique_ptr<std::stringstream>& psout, vector<string>& cmdLines) {
+string base_send_to(BulkType& bulk, std::unique_ptr<std::stringstream>& psout, vector<string> cmdLines) {
 	for (auto& cmd : cmdLines) {
 		bulk(cmd);
 	}
@@ -62,12 +62,12 @@ string base_send_to(BulkType& bulk, std::unique_ptr<std::stringstream>& psout, v
 }
 
 template<class BulkType>
-string send_to(BulkType& bulk, vector<string>& cmdLines) {
+string send_to(BulkType& bulk, vector<string> cmdLines) {
 	auto psout = std::make_unique<std::stringstream>();
 	return base_send_to(bulk, psout, cmdLines);
 }
 
-string send(vector<string>& cmdLines) {
+string send(vector<string> cmdLines) {
 	auto psout = std::make_unique<std::stringstream>();
 	auto bulk = createBulk(psout);
 	return base_send_to(bulk, psout, cmdLines);
@@ -91,13 +91,6 @@ string readfile(string file) {
 	}
 	return res;
 }
-
-//string get_filename() {
-//
-//
-//	FileOutputObserver < true, MockFilenameGetter >::
-//	return "";
-//}
 
 bool trivial_test() {
 	return call_test(__PRETTY_FUNCTION__, []() {
