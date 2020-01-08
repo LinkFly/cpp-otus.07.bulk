@@ -53,4 +53,4 @@ public:
 	}
 };
 
-using Bulk = BulkBase< ConsoleOutputObserver, FileOutputObserver<true>>;
+using Bulk = BulkBase< ConsoleOutputObserver, FileOutputObserver<>>;

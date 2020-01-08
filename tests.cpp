@@ -125,11 +125,17 @@ bool without_end_dynamic_size_test() {
 
 bool create_files_test() {
 	return call_test(__PRETTY_FUNCTION__, []() {
+		// fixture data
+		#define FIXED_TIME 1234567890;
+		auto waitFilename1 = "bulk1234567890";
+		auto waitFilename2 = "bulk1234567891";
+		// end fixture data
 		constexpr int is_inc_file = true;
 		struct MockFilenameGetter : public IFilenameGetter {
+			/*static time_t fixed_time;*/
 			FilenameGetter<is_inc_file> fnameGetter;
 			string operator()([[maybe_unused]] time_t time) override {
-				time_t fixed_time = 100;
+				time_t fixed_time = FIXED_TIME;
 				auto cur_file = get_temp_dir() / fnameGetter(fixed_time);
 				return cur_file.string();
 			}
@@ -149,8 +155,8 @@ bool create_files_test() {
 		{
 			BulkBase<FileOutputObserver<is_inc_file, MockFilenameGetter>> bulk{ 3 };
 			auto res = send_to(bulk, vector<string>{ "cmd1", "cmd2", "cmd3", "cmd4", "cmd5" });
-			auto waitedFile1 = dir / "bulk100";
-			auto waitedFile2 = dir / "bulk101";
+			auto waitedFile1 = dir / waitFilename1;
+			auto waitedFile2 = dir / waitFilename2;
 			bool isExists1 = fs::exists(waitedFile1);
 			bool isExists2 = fs::exists(waitedFile1);
 			if (!isExists1 || !isExists2) {
