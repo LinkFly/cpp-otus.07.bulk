@@ -62,8 +62,6 @@ public:
 };
 
 class CommandsHandler {
-	IObservable& observable;
-	CommandsState& state;
 	CmdStart start;
 	CmdEnd end;
 	CmdAdd add;
@@ -73,7 +71,7 @@ class CommandsHandler {
 		{ECommand::ADD, &add},
 	};
 public:
-	CommandsHandler(IObservable& observable, CommandsState& state) : observable{ observable }, state{ state } {
+	CommandsHandler(IObservable& observable, CommandsState& state) {
 		for (auto& keyval : cmdsDict) {
 			keyval.second->init(&observable, &state);
 		}

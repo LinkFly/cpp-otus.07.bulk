@@ -49,7 +49,7 @@ BulkBase<StreamOutputObserver> createBulk(std::unique_ptr<std::stringstream>& ps
 	auto fnsInit = vector<FnInit>{ [&psout](OutputObserver* obs) {
 			obs->setOutStream(psout.get());
 		} };
-	return BulkBase<StreamOutputObserver>(3, fnsInit);
+	return BulkBase<StreamOutputObserver>(size, fnsInit);
 }
 
 template<class BulkType>
@@ -77,7 +77,6 @@ string readfile(string file) {
 	string res;
 	string line;
 	ifstream fin(file);
-	bool isFirst = true;
 	if (fin.is_open()) {
 		while (true) {
 			std::getline(fin, line);

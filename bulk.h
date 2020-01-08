@@ -24,7 +24,7 @@ public:
 	BulkBase(int limit, vector<fnInit> fnsInit = vector<fnInit>{}) : BulkBase{} {
 		state.init(limit);
 		obsFactory();
-		for (int i = 0; i < fnsInit.size(); ++i) {
+		for (decltype(fnsInit.size()) i = 0; i < fnsInit.size(); ++i) {
 			fnsInit[i](observers[i].get());
 		}
 	}

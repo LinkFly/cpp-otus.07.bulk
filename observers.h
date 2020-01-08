@@ -28,7 +28,7 @@ protected:
 			;
 		}
 	}
-	void update(ECommand cmd, string data) override {}
+	void update([[maybe_unused]] ECommand cmd, [[maybe_unused]] string data) override {}
 };
 
 struct CollectorObserver : public ObserverBase {
