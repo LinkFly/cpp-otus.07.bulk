@@ -6,7 +6,7 @@
 using std::string;
 
 enum class ECommand : int {
-	ADD, START, END
+	ADD, START, END, ENDOF
 };
 
 struct IObserver {

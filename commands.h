@@ -18,7 +18,9 @@ protected:
 		cmdObservable->notify(ECommand::START);
 	}
 	void notifyEnd() {
-		cmdObservable->notify(ECommand::END);
+		if (state->size() != 0) {
+			cmdObservable->notify(ECommand::END);
+		}
 	}
 	void notifyAdd() {
 		cmdObservable->notify(ECommand::ADD);
@@ -61,14 +63,26 @@ public:
 	}
 };
 
+class CmdEof : public CmdBase {
+public:
+	void exec([[maybe_unused]] const string& data = string{""}) override {
+		if (state->newCount == 0) {
+			notifyEnd();
+		}
+		state->clear();
+	}
+};
+
 class CommandsHandler {
 	CmdStart start;
 	CmdEnd end;
 	CmdAdd add;
+	CmdEof endOf;
 	std::map<ECommand, CmdBase*> cmdsDict{
 		{ECommand::START, &start},
 		{ECommand::END, &end},
 		{ECommand::ADD, &add},
+		{ECommand::ENDOF, &endOf},
 	};
 public:
 	CommandsHandler(IObservable& observable, CommandsState& state) {
@@ -76,6 +90,7 @@ public:
 			keyval.second->init(&observable, &state);
 		}
 	}
+
 	void operator()(string& line) {
 		if (line == "{") {
 			cmdsDict[ECommand::START]->exec();
@@ -86,5 +101,9 @@ public:
 		else {
 			cmdsDict[ECommand::ADD]->exec(line);
 		}
+	}
+
+	void eof() {
+		cmdsDict[ECommand::ENDOF]->exec();
 	}
 };

@@ -5,6 +5,7 @@ var searchData=
   ['cmdadd',['CmdAdd',['../class_cmd_add.html',1,'']]],
   ['cmdbase',['CmdBase',['../class_cmd_base.html',1,'']]],
   ['cmdend',['CmdEnd',['../class_cmd_end.html',1,'']]],
+  ['cmdeof',['CmdEof',['../class_cmd_eof.html',1,'']]],
   ['cmdstart',['CmdStart',['../class_cmd_start.html',1,'']]],
   ['collectorobserver',['CollectorObserver',['../struct_collector_observer.html',1,'CollectorObserver'],['../struct_collector_observer.html#a1bd761e7bb5cd7787c2496ad3cc3e465',1,'CollectorObserver::CollectorObserver()']]],
   ['commandobservable',['CommandObservable',['../class_command_observable.html',1,'']]],

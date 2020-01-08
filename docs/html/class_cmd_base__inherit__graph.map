@@ -1,6 +1,7 @@
 <map id="CmdBase" name="CmdBase">
 <area shape="rect" id="node3" href="$class_cmd_add.html" title="CmdAdd" alt="" coords="5,155,83,181"/>
 <area shape="rect" id="node4" href="$class_cmd_end.html" title="CmdEnd" alt="" coords="107,155,183,181"/>
-<area shape="rect" id="node5" href="$class_cmd_start.html" title="CmdStart" alt="" coords="207,155,291,181"/>
-<area shape="rect" id="node2" href="$struct_i_command.html" title="ICommand\&lt; string \&gt;" alt="" coords="66,5,225,32"/>
+<area shape="rect" id="node5" href="$class_cmd_eof.html" title="CmdEof" alt="" coords="208,155,280,181"/>
+<area shape="rect" id="node6" href="$class_cmd_start.html" title="CmdStart" alt="" coords="305,155,389,181"/>
+<area shape="rect" id="node2" href="$struct_i_command.html" title="ICommand\&lt; string \&gt;" alt="" coords="115,5,274,32"/>
 </map>

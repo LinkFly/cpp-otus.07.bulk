@@ -1,5 +1,6 @@
 <map id="CmdEnd::exec" name="CmdEnd::exec">
-<area shape="rect" id="node2" href="$class_cmd_base.html#a501632bad6f91e45bf8c22073ff432c6" title="CmdBase::notifyEnd" alt="" coords="178,5,329,32"/>
-<area shape="rect" id="node4" href="$class_commands_state.html#a638034095963268ab56211c2933fddac" title="CommandsState::clear" alt="" coords="168,56,339,83"/>
-<area shape="rect" id="node3" href="$struct_i_observable.html#a639f160d68e626515e6d977f813c3b09" title="IObservable::notify" alt="" coords="387,5,527,32"/>
+<area shape="rect" id="node2" href="$class_cmd_base.html#a501632bad6f91e45bf8c22073ff432c6" title="CmdBase::notifyEnd" alt="" coords="178,31,329,57"/>
+<area shape="rect" id="node5" href="$class_commands_state.html#a638034095963268ab56211c2933fddac" title="CommandsState::clear" alt="" coords="168,81,339,108"/>
+<area shape="rect" id="node3" href="$class_commands_state.html#a74ea73a7753aee71cfdacb8ac0fc7ad7" title="CommandsState::size" alt="" coords="387,5,551,32"/>
+<area shape="rect" id="node4" href="$struct_i_observable.html#a639f160d68e626515e6d977f813c3b09" title="IObservable::notify" alt="" coords="399,56,539,83"/>
 </map>

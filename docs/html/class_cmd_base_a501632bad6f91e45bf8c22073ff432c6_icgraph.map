@@ -2,4 +2,5 @@
 <area shape="rect" id="node2" href="$class_cmd_start.html#acf20f86d72982205d1af586b5e09846e" title="CmdStart::exec" alt="" coords="204,5,327,32"/>
 <area shape="rect" id="node3" href="$class_cmd_end.html#a4c316b96ae2a814838a4c985b8b551ab" title="CmdEnd::exec" alt="" coords="208,56,323,83"/>
 <area shape="rect" id="node4" href="$class_cmd_add.html#ad68e32ec699775d814a7dc79ebaa5646" title="CmdAdd::exec" alt="" coords="208,107,323,133"/>
+<area shape="rect" id="node5" href="$class_cmd_eof.html#a8435f64f04c88623fb29168ebf883e0d" title="CmdEof::exec" alt="" coords="210,157,321,184"/>
 </map>

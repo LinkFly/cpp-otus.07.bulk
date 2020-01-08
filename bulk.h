@@ -48,7 +48,9 @@ public:
 			handler(line);
 		}
 	}
-	void eof() { cmdObservable.notify(ECommand::END); }
+	void eof() {
+		handler.eof();
+	}
 };
 
 using Bulk = BulkBase< ConsoleOutputObserver, FileOutputObserver<true>>;

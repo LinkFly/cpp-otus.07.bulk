@@ -1,8 +1,9 @@
 <map id="IObservable::notify" name="IObservable::notify">
 <area shape="rect" id="node2" href="$class_cmd_base.html#a090ff153849f8c18e2d0f1182ffa5acd" title="CmdBase::notifyStart" alt="" coords="193,5,352,32"/>
 <area shape="rect" id="node4" href="$class_cmd_base.html#a501632bad6f91e45bf8c22073ff432c6" title="CmdBase::notifyEnd" alt="" coords="197,56,348,83"/>
-<area shape="rect" id="node7" href="$class_cmd_base.html#a26df8a46be6e4bb0e9d890a625cdac9d" title="CmdBase::notifyAdd" alt="" coords="197,107,349,133"/>
+<area shape="rect" id="node8" href="$class_cmd_base.html#a26df8a46be6e4bb0e9d890a625cdac9d" title="CmdBase::notifyAdd" alt="" coords="197,107,349,133"/>
 <area shape="rect" id="node3" href="$class_cmd_start.html#acf20f86d72982205d1af586b5e09846e" title="CmdStart::exec" alt="" coords="400,5,523,32"/>
 <area shape="rect" id="node5" href="$class_cmd_end.html#a4c316b96ae2a814838a4c985b8b551ab" title="CmdEnd::exec" alt="" coords="404,56,519,83"/>
 <area shape="rect" id="node6" href="$class_cmd_add.html#ad68e32ec699775d814a7dc79ebaa5646" title="CmdAdd::exec" alt="" coords="404,107,519,133"/>
+<area shape="rect" id="node7" href="$class_cmd_eof.html#a8435f64f04c88623fb29168ebf883e0d" title="CmdEof::exec" alt="" coords="406,157,517,184"/>
 </map>
