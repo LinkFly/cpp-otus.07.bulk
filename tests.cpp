@@ -115,6 +115,14 @@ bool nested_dynamic_size_test() {
 		});
 }
 
+bool without_end_dynamic_size_test() {
+	return call_test(__PRETTY_FUNCTION__, []() {
+		auto res = send(vector<string>{ "cmd1", "cmd2", "cmd3", "{", "cmd4", "cmd5", "cmd6", "cmd7" });
+		auto waitres = "bulk: cmd1, cmd2, cmd3\n";
+		return res == waitres;
+		});
+}
+
 bool create_files_test() {
 	return call_test(__PRETTY_FUNCTION__, []() {
 		constexpr int is_inc_file = true;
@@ -175,17 +183,16 @@ bool create_files_test() {
 //#define INIT(init_func) struct Init init(init_func);
 
 
-BOOST_AUTO_TEST_SUITE(allocator_test_suite)
+BOOST_AUTO_TEST_SUITE(bulk_test_suite)
 //INIT(init_base_fixtures)
 
-BOOST_AUTO_TEST_CASE(test_of_matrix)
+BOOST_AUTO_TEST_CASE(test_of_bulk_uses)
 {
 	BOOST_CHECK(trivial_test());
 	BOOST_CHECK(dynamic_size_test());
 	BOOST_CHECK(nested_dynamic_size_test());
 	BOOST_CHECK(create_files_test());
-
-
+	BOOST_CHECK(without_end_dynamic_size_test());
 }
 
 BOOST_AUTO_TEST_SUITE_END()
