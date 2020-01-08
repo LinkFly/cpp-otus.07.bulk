@@ -3,7 +3,8 @@
 #include <iostream>
 #include <string>
 #include <fstream>
-#include <filesystem>
+/*#include <filesystem>*/
+#include <boost/filesystem.hpp>
 //#include <memory>
 #include <string>
 
@@ -12,7 +13,8 @@
 using std::cout;
 using std::endl;
 using std::string;
-namespace fs = std::filesystem;
+//namespace fs = std::filesystem;
+namespace fs = boost::filesystem;
 
 template<class InStream, size_t bufsize = 20>
 bool readline(InStream& in, string& line) {
