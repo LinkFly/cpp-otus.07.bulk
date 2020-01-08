@@ -77,16 +77,16 @@ string readfile(string file) {
 	ifstream fin(file);
 	bool isFirst = true;
 	if (fin.is_open()) {
-		if (std::getline(fin, line)) {
+		while (true) {
+			std::getline(fin, line);
 			res += line;
+			if (fin.eof()) {
+				break;
+			}
+			else res += '\n';
 		}
-		while (std::getline(fin, line)) {
-			res += "\n" + line;
-		}
-		// TODO! Resolve: how read last \n ?
-		res += "\n";
+		fin.close();
 	}
-	fin.close();
 	return res;
 }
 
@@ -157,9 +157,9 @@ bool create_files_test() {
 			}
 			content1 = readfile(waitedFile1.string());
 			content2 = readfile(waitedFile2.string());
-			if (content1 != "cmd1\ncmd2\ncmd3\n")
+			if (content1 != "cmd1\ncmd2\ncmd3")
 				goto exitBlock;
-			if (content2 != "cmd4\ncmd5\n")
+			if (content2 != "cmd4\ncmd5")
 				goto exitBlock;
 			// we here - without errors
 			isResult = true;

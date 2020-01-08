@@ -1,19 +1,14 @@
 #pragma once
 
 #include "share.h"
-#include <iostream>
+
 #include <string>
 #include <vector>
-#include <functional>
-#include <ctime>
-#include <map>
 
 #include "interface.h"
 #include "observers.h"
 #include "commands.h"
 
-using std::cout;
-using std::endl;
 using std::string;
 using std::vector;
 

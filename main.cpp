@@ -4,6 +4,8 @@
 #include <string>
 #include <fstream>
 #include <filesystem>
+//#include <memory>
+#include <string>
 
 #include "bulk.h"
 
@@ -12,29 +14,10 @@ using std::endl;
 using std::string;
 namespace fs = std::filesystem;
 
-// TODO using std
-template<class InStream>
+template<class InStream, size_t bufsize = 20>
 bool readline(InStream& in, string& line) {
-	line = "";
-	while (true) {
-		char ch;
-		// TODO!!! Optimize it
-		/*std::istream fin;*/
-		in.read(&ch, 1);
-		if (in.eof()) {
-			return false;
-		}
-		if (ch == '\0') {
-			return false;
-		}
-		else if (ch == '\n') {
-			return true;
-		}
-		else {
-			line += ch;
-			continue;
-		}
-	}
+	std::getline(in, line);
+	return in.eof();
 }
 
 class Processing {
@@ -42,16 +25,14 @@ class Processing {
 public:
 	Processing(int limit) : bulk{ limit } {}
 
-	//void process(string& line) {
-	//	bulk(line);
-	//}
-
 	template<typename InStream>
 	void processInput(InStream& in) {
 		string line;
-		while (readline(in, line)) {
+		bool isEof;
+		do {
+			isEof = readline(in, line);
 			bulk(line);
-		}
+		} while (!isEof);
 		bulk.eof();
 	}
 };
@@ -59,17 +40,14 @@ public:
 int main(int argc, char** argv) {
 	Processing proc{ std::atoi(argv[1]) };
 	if (argc == 3) {
-		string line;
-		std::ifstream fin(argv[2], std::ios::in);
 		if (fs::exists(argv[2])) {
-			
+			std::ifstream fin(argv[2], std::ios::in);
+			proc.processInput(fin);
 		}
 		else {
 			std::cerr << "file " << argv[2] << " does not exists" << endl;
 			return 1;
 		}
-
-		proc.processInput(fin);
 	}
 	else {
 		proc.processInput(std::cin);
