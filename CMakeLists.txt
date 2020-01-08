@@ -25,13 +25,17 @@ set_target_properties(bulk tests PROPERTIES
 	CXX_STANDARD_REQUIRED ON
 	)
 
-find_package(Boost COMPONENTS unit_test_framework REQUIRED)
+find_package(Boost COMPONENTS unit_test_framework filesystem REQUIRED)
 
 target_link_libraries(tests
 	${Boost_LIBRARIES}
 )
 
-set_target_properties(tests PROPERTIES
+target_link_libraries(bulk
+  ${Boost_LIBRARIES}
+  )
+
+set_target_properties(bulk tests PROPERTIES
 	COMPILE_DEFINITIONS BOOST_TEST_DYN_LINK
 	INCLUDE_DIRECTORIES ${Boost_INCLUDE_DIRS}
 	LINK_DIRECTORIES ${Boost_LIBRARY_DIRS}
