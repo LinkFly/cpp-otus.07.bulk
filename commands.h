@@ -27,7 +27,7 @@ protected:
 
 class CmdStart : public CmdBase {
 public:
-	void exec([[maybe_unused]] string& data) override {
+	void exec([[maybe_unused]] const string& data) override {
 		if (state->newCount == 0) {
 			notifyEnd();
 			state->clear();
@@ -39,7 +39,7 @@ public:
 
 class CmdEnd : public CmdBase {
 public:
-	void exec([[maybe_unused]] string& data) override {
+	void exec([[maybe_unused]] const string& data) override {
 		--state->newCount;
 		if (state->newCount == 0) {
 			notifyEnd();
@@ -50,7 +50,7 @@ public:
 
 class CmdAdd : public CmdBase {
 public:
-	void exec(string& data) override {
+	void exec(const string& data) override {
 		state->add(data);
 		if (state->newCount == 0) {
 			if (state->size() == state->limit) {

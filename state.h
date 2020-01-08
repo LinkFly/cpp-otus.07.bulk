@@ -31,7 +31,7 @@ public:
 	}
 	void forEach(std::function<void(string & cmd, bool isFirst, bool isLast)> fn) {
 		auto size = cmdLines.size();
-		for (int i = 0; i < size; ++i) {
+		for (decltype(size) i = 0; i < size; ++i) {
 			auto& cmd = cmdLines[i];
 			fn(cmd, i == 0, i == (size - 1));
 		}

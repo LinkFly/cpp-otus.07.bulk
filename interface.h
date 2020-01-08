@@ -18,7 +18,7 @@ struct IObserver {
 struct IObservable {
 	virtual void subscribe(IObserver*) = 0;
 	virtual void notify(ECommand cmd) = 0;
-	virtual void notify(ECommand cmd, string data) {};
+	virtual void notify([[maybe_unused]] ECommand cmd, [[maybe_unused]] string data) {};
 	virtual ~IObservable() {}
 };
 
