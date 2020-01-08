@@ -8,6 +8,8 @@ addons:
      - libboost-filesystem-dev
      #- python3-pip
 #    - libboost-all-dev # it works
+     - doxygen
+     - graphviz
 
 # for tech commit
 script:
@@ -21,6 +23,10 @@ script:
 - cmake --build .
 - cmake --build . --target tests
 - cmake --build . --target package
+- cd ..
+- doxygen ./Doxyfile
+- cd build
+
 deploy:
   - provider: script
     skip_cleanup: true
