@@ -9,6 +9,8 @@
 #include "observers.h"
 #include "commands.h"
 
+#include <iostream>
+
 using std::string;
 using std::vector;
 
@@ -42,7 +44,9 @@ private:
 
 public:
 	void operator()(string& line) {
-		handler(line);
+		if (line.size() != 0) {
+			handler(line);
+		}
 	}
 	void eof() { cmdObservable.notify(ECommand::END); }
 };
