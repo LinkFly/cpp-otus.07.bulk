@@ -92,7 +92,7 @@ string readfile(string file) {
 
 //string get_filename() {
 //
-//	
+//
 //	FileOutputObserver < true, MockFilenameGetter >::
 //	return "";
 //}
@@ -141,7 +141,7 @@ bool create_files_test() {
 			fs::remove_all(dir);
 		fs::create_directory(dir);
 		//// end Prepare
-		
+
 		string content1, content2;
 		bool isResult = false;
 		{
@@ -166,7 +166,6 @@ bool create_files_test() {
 		exitBlock:
 			;
 		}
-		// TODO Uncommented
 		fs::remove_all(dir);
 		return isResult;
 		});
@@ -191,8 +190,8 @@ BOOST_AUTO_TEST_CASE(test_of_matrix)
 	BOOST_CHECK(dynamic_size_test());
 	BOOST_CHECK(nested_dynamic_size_test());
 	BOOST_CHECK(create_files_test());
-	
-	
+
+
 }
 
 BOOST_AUTO_TEST_SUITE_END()
