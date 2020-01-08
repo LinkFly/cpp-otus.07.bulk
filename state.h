@@ -17,7 +17,7 @@ public:
 	unsigned newCount = 0;
 	std::time_t start_read = 0; // time
 	void init(int limit) { this->limit = limit; }
-	void add(string& cmdline) {
+	void add(const string& cmdline) {
 		if (cmdLines.size() == 0) {
 			start_read = std::time(0);
 		}

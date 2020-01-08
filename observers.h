@@ -23,6 +23,9 @@ protected:
 		switch (cmd) {
 		case ECommand::END:
 			outBulk();
+			break;
+		default:
+			;
 		}
 	}
 	void update(ECommand cmd, string data) override {}
@@ -34,6 +37,9 @@ struct CollectorObserver : public ObserverBase {
 		switch (cmd) {
 		case ECommand::ADD:
 			state.add(data);
+			break;
+		default:
+			;
 		}
 	}
 };

@@ -24,7 +24,7 @@ struct IObservable {
 
 template<typename T>
 struct ICommand {
-	virtual void exec([[maybe_unused]] T& data = T{}) = 0;
+	virtual void exec([[maybe_unused]] const T& data = T{}) = 0;
 	virtual ~ICommand() {}
 };
 
