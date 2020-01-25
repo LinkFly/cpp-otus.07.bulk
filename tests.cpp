@@ -98,6 +98,13 @@ bool trivial_test() {
 	});
 }
 
+bool handling_empty_string_test() {
+	return call_test(__PRETTY_FUNCTION__, []() {
+		auto res = send(vector<string>{ "cmd1", "cmd2", "", "cmd4", "cmd5" });
+		return res == "bulk: cmd1, cmd2, \nbulk: cmd4, cmd5\n";
+		});
+}
+
 bool dynamic_size_test() {
 	/*cout << get_filename(time_t */
 	return call_test(__PRETTY_FUNCTION__, []() {
@@ -127,8 +134,8 @@ bool create_files_test() {
 	return call_test(__PRETTY_FUNCTION__, []() {
 		// fixture data
 		#define FIXED_TIME 1234567890;
-		auto waitFilename1 = "bulk1234567890";
-		auto waitFilename2 = "bulk1234567891";
+		auto waitFilename1 = "bulk1234567890.log";
+		auto waitFilename2 = "bulk1234567891.log";
 		// end fixture data
 		constexpr int is_inc_file = true;
 		struct MockFilenameGetter : public IFilenameGetter {
@@ -195,6 +202,7 @@ BOOST_AUTO_TEST_SUITE(bulk_test_suite)
 BOOST_AUTO_TEST_CASE(test_of_bulk_uses)
 {
 	BOOST_CHECK(trivial_test());
+	BOOST_CHECK(handling_empty_string_test());
 	BOOST_CHECK(dynamic_size_test());
 	BOOST_CHECK(nested_dynamic_size_test());
 	BOOST_CHECK(create_files_test());
