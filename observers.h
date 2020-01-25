@@ -86,7 +86,7 @@ struct FilenameGetter : public IFilenameGetter {
 		if constexpr (use_inc_file) {
 			time += diff++;
 		}
-		return string("bulk") + timeToString(time);
+		return string("bulk") + timeToString(time) + ".log";
 	}
 
 	static string timeToString(time_t time) {

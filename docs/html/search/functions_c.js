@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['readfile',['readfile',['../tests_8cpp.html#a0daf9a77b59886e9bfee43520b60b599',1,'tests.cpp']]],
-  ['readline',['readline',['../main_8cpp.html#ab0e16fb26036aa9caf238d116fed5e45',1,'main.cpp']]],
-  ['removelast',['removeLast',['../class_commands_state.html#ae19501ca13fe9e1c5ebebe73eeaf8f72',1,'CommandsState']]]
+  ['processing',['Processing',['../class_processing.html#a69199047ad45cb4dcb02b2d281b44264',1,'Processing']]],
+  ['processinput',['processInput',['../class_processing.html#a69a7389c439fdec2afe57e6e59d5287c',1,'Processing']]]
 ];

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['without_5fend_5fdynamic_5fsize_5ftest',['without_end_dynamic_size_test',['../tests_8cpp.html#abbf0a78691eeb67b3cd1febf705dd6c6',1,'tests.cpp']]]
+  ['update',['update',['../struct_i_observer.html#a8e86c5a6f02b990dc8ee5bb8a546a056',1,'IObserver::update(ECommand cmd)=0'],['../struct_i_observer.html#a87304ed05adacf4219c5e4252629ae14',1,'IObserver::update(ECommand cmd, string data)=0'],['../struct_observer_base.html#ae178c765ecda0166fd784dcb4ebe0a40',1,'ObserverBase::update(ECommand cmd) override'],['../struct_observer_base.html#affde8239fde79ba5135dad1db3e6fcfe',1,'ObserverBase::update([[maybe_unused]] ECommand cmd, [[maybe_unused]] string data) override'],['../struct_collector_observer.html#adebc5768f5778ceb3e981362363db247',1,'CollectorObserver::update()']]]
 ];

@@ -1,9 +1,9 @@
 var searchData=
 [
-  ['observerbase',['ObserverBase',['../struct_observer_base.html',1,'ObserverBase'],['../struct_observer_base.html#ade5a5f743b630b7a3a06c097e7f48aa8',1,'ObserverBase::ObserverBase()']]],
-  ['observers_2eh',['observers.h',['../observers_8h.html',1,'']]],
-  ['operator_28_29',['operator()',['../class_bulk_base.html#a3c920e9c377f87728b9d6aaf5116e824',1,'BulkBase::operator()()'],['../class_commands_handler.html#a01d015d93967a927d4989f4f3a8f4a18',1,'CommandsHandler::operator()()'],['../struct_i_filename_getter.html#a91494380c214e12bd0e6bf875c0f5a0d',1,'IFilenameGetter::operator()()'],['../struct_filename_getter.html#a39dfdbff4d78e09117f0e2d98b7044e5',1,'FilenameGetter::operator()()']]],
-  ['out',['out',['../struct_output_observer.html#a64538320bd2f95c23e7d5d5315aeae7d',1,'OutputObserver']]],
-  ['outbulk',['outBulk',['../struct_observer_base.html#acf405ad8b991810572d0c2425f782b36',1,'ObserverBase::outBulk()'],['../struct_stream_output_observer.html#a10b38ed3f4f8ef4ffa710830c4229d35',1,'StreamOutputObserver::outBulk()'],['../struct_file_output_observer.html#a818d1d56e2495ecfa79a50297a0639ce',1,'FileOutputObserver::outBulk()']]],
-  ['outputobserver',['OutputObserver',['../struct_output_observer.html',1,'OutputObserver'],['../struct_output_observer.html#a4052d1e6dc1982c34d2d16096e07907d',1,'OutputObserver::OutputObserver()']]]
+  ['nested_5fdynamic_5fsize_5ftest',['nested_dynamic_size_test',['../tests_8cpp.html#ac4c7e0c1b9d16bf69a8c43ec4367155c',1,'tests.cpp']]],
+  ['newcount',['newCount',['../class_commands_state.html#a9d4a6edd6fc21c07150ec1bebf8516f4',1,'CommandsState']]],
+  ['notify',['notify',['../struct_i_observable.html#a639f160d68e626515e6d977f813c3b09',1,'IObservable::notify(ECommand cmd)=0'],['../struct_i_observable.html#a457791f8021b05c51ec51193e0392fd3',1,'IObservable::notify([[maybe_unused]] ECommand cmd, [[maybe_unused]] string data)'],['../class_command_observable.html#a6df1f72513d0964125e6eec93a861335',1,'CommandObservable::notify(ECommand cmd) override'],['../class_command_observable.html#ae1da1f83ac5b27fc0d6dbaa5dd1e773b',1,'CommandObservable::notify(ECommand cmd, string data) override']]],
+  ['notifyadd',['notifyAdd',['../class_cmd_base.html#a26df8a46be6e4bb0e9d890a625cdac9d',1,'CmdBase']]],
+  ['notifyend',['notifyEnd',['../class_cmd_base.html#a501632bad6f91e45bf8c22073ff432c6',1,'CmdBase']]],
+  ['notifystart',['notifyStart',['../class_cmd_base.html#a090ff153849f8c18e2d0f1182ffa5acd',1,'CmdBase']]]
 ];

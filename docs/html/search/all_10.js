@@ -1,4 +1,7 @@
 var searchData=
 [
-  ['update',['update',['../struct_i_observer.html#a8e86c5a6f02b990dc8ee5bb8a546a056',1,'IObserver::update(ECommand cmd)=0'],['../struct_i_observer.html#a87304ed05adacf4219c5e4252629ae14',1,'IObserver::update(ECommand cmd, string data)=0'],['../struct_observer_base.html#ae178c765ecda0166fd784dcb4ebe0a40',1,'ObserverBase::update(ECommand cmd) override'],['../struct_observer_base.html#affde8239fde79ba5135dad1db3e6fcfe',1,'ObserverBase::update([[maybe_unused]] ECommand cmd, [[maybe_unused]] string data) override'],['../struct_collector_observer.html#adebc5768f5778ceb3e981362363db247',1,'CollectorObserver::update()']]]
+  ['temp_5fdir',['temp_dir',['../tests_8cpp.html#addd5944926e4757f72bf26672eb262b1',1,'tests.cpp']]],
+  ['tests_2ecpp',['tests.cpp',['../tests_8cpp.html',1,'']]],
+  ['timetostring',['timeToString',['../struct_filename_getter.html#a3cda4cc7e1fbe66764feef97dc8cfaf6',1,'FilenameGetter']]],
+  ['trivial_5ftest',['trivial_test',['../tests_8cpp.html#a27f4531407d483867e2f5432ea80d3a6',1,'tests.cpp']]]
 ];

@@ -1,14 +1,15 @@
 <map id="BOOST_AUTO_TEST_CASE" name="BOOST_AUTO_TEST_CASE">
-<area shape="rect" id="node2" href="$tests_8cpp.html#a27f4531407d483867e2f5432ea80d3a6" title="trivial_test" alt="" coords="295,71,383,98"/>
-<area shape="rect" id="node7" href="$tests_8cpp.html#a33fd002975bcbea9a830478df5760cf1" title="dynamic_size_test" alt="" coords="269,122,409,149"/>
-<area shape="rect" id="node8" href="$tests_8cpp.html#ac4c7e0c1b9d16bf69a8c43ec4367155c" title="nested_dynamic_size_test" alt="" coords="244,173,435,199"/>
-<area shape="rect" id="node9" href="$tests_8cpp.html#ab2fea220457efe10181451d9d37538e4" title="create_files_test" alt="" coords="276,223,403,250"/>
-<area shape="rect" id="node13" href="$tests_8cpp.html#abbf0a78691eeb67b3cd1febf705dd6c6" title="without_end_dynamic\l_size_test" alt="" coords="259,5,419,47"/>
-<area shape="rect" id="node3" href="$tests_8cpp.html#aa077d5d13677e8627ef4bb67164ec979" title="call_test" alt="" coords="543,122,618,149"/>
-<area shape="rect" id="node4" href="$tests_8cpp.html#a8f3d8d7d6db8ee35b928ec5466564954" title="send" alt="" coords="554,71,607,98"/>
-<area shape="rect" id="node5" href="$tests_8cpp.html#ab4a307d1673af3951f0bde503a10265e" title="createBulk" alt="" coords="737,71,827,98"/>
-<area shape="rect" id="node6" href="$tests_8cpp.html#a40b8d78d488117600deb8a60915d0a8f" title="base_send_to" alt="" coords="727,147,837,174"/>
-<area shape="rect" id="node10" href="$struct_i_filename_getter.html#a91494380c214e12bd0e6bf875c0f5a0d" title="IFilenameGetter::operator()" alt="" coords="483,223,679,250"/>
-<area shape="rect" id="node11" href="$tests_8cpp.html#aa6f57c4d5e6addd9d0fad0b2e7f1b805" title="send_to" alt="" coords="544,173,617,199"/>
-<area shape="rect" id="node12" href="$tests_8cpp.html#a0daf9a77b59886e9bfee43520b60b599" title="readfile" alt="" coords="546,274,615,301"/>
+<area shape="rect" id="node2" href="$tests_8cpp.html#a27f4531407d483867e2f5432ea80d3a6" title="trivial_test" alt="" coords="299,224,387,251"/>
+<area shape="rect" id="node7" href="$tests_8cpp.html#a6d606e324e8799c8f2c85fde6ef678bf" title="handling_empty_string_test" alt="" coords="244,5,443,32"/>
+<area shape="rect" id="node8" href="$tests_8cpp.html#a33fd002975bcbea9a830478df5760cf1" title="dynamic_size_test" alt="" coords="273,56,413,83"/>
+<area shape="rect" id="node9" href="$tests_8cpp.html#ac4c7e0c1b9d16bf69a8c43ec4367155c" title="nested_dynamic_size_test" alt="" coords="248,107,439,133"/>
+<area shape="rect" id="node10" href="$tests_8cpp.html#ab2fea220457efe10181451d9d37538e4" title="create_files_test" alt="" coords="280,275,407,301"/>
+<area shape="rect" id="node14" href="$tests_8cpp.html#abbf0a78691eeb67b3cd1febf705dd6c6" title="without_end_dynamic\l_size_test" alt="" coords="263,158,423,199"/>
+<area shape="rect" id="node3" href="$tests_8cpp.html#aa077d5d13677e8627ef4bb67164ec979" title="call_test" alt="" coords="551,163,626,189"/>
+<area shape="rect" id="node4" href="$tests_8cpp.html#a8f3d8d7d6db8ee35b928ec5466564954" title="send" alt="" coords="562,111,615,137"/>
+<area shape="rect" id="node5" href="$tests_8cpp.html#ab4a307d1673af3951f0bde503a10265e" title="createBulk" alt="" coords="745,111,835,137"/>
+<area shape="rect" id="node6" href="$tests_8cpp.html#a40b8d78d488117600deb8a60915d0a8f" title="base_send_to" alt="" coords="735,188,845,215"/>
+<area shape="rect" id="node11" href="$struct_i_filename_getter.html#a91494380c214e12bd0e6bf875c0f5a0d" title="IFilenameGetter::operator()" alt="" coords="491,272,687,299"/>
+<area shape="rect" id="node12" href="$tests_8cpp.html#aa6f57c4d5e6addd9d0fad0b2e7f1b805" title="send_to" alt="" coords="552,216,625,243"/>
+<area shape="rect" id="node13" href="$tests_8cpp.html#a0daf9a77b59886e9bfee43520b60b599" title="readfile" alt="" coords="554,323,623,349"/>
 </map>

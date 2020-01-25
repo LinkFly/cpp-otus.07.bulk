@@ -44,9 +44,7 @@ private:
 
 public:
 	void operator()(string& line) {
-		if (line.size() != 0) {
-			handler(line);
-		}
+		handler(line);
 	}
 	void eof() {
 		handler.eof();
